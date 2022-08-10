@@ -28,17 +28,28 @@ def get_week_info(city='киев'):
     soup = BeautifulSoup(html_doc, 'html.parser')
     soup_result = np.array(soup.find(id='blockDays').find(attrs={'class': 'tabs'}).text.split())
     soup_result = soup_result.reshape((int(soup_result.shape[0]/7), 7))
-    img_result = soup.find(id='blockDays').find(attrs={'class': 'tabs'}).find_all(attrs={'class':'weatherIco'})
+    img_result = soup.find(id='blockDays').find(attrs={'class': 'tabs'}).find_all(attrs={'class': 'weatherIco'})
+
     # Take images info from parser
     img_list, img_url, gifs = [], [], []
     for image in img_result:
         img_list.append(str(image).split('"')[3])
-        img_url.append(str(image).split('"')[-2])
+        # img_url.append(str(image).split('"')[-2])
+
+    # TODO: download images to decorate answers
     # Take gif from url
-    for url in img_url:
-        gifs.append(requests.get('http:'+url).content)
+    # for idx, url in enumerate(img_url):
+    #     with open(f'/tmp/{idx}.gif', 'wb') as f:
+    #         f.write(requests.get(url).content)
+    #     gifs.append(requests.get(url).content)
     soup_result = np.column_stack((soup_result, img_list))
-    return soup_result
+    result = []
+    for row in soup_result:
+        result.append({'day': row[0] + ' - ' + row[1] + ' ' + row[2],
+                       'min_temp': row[4],
+                       'max_temp': row[6],
+                       'description': row[7]})
+    return result
 
 
 def get_now_weather(city="киев"):
@@ -80,7 +91,7 @@ def get_today_weather(city='киев'):
     result_list.append(max(soup_result[4].tolist()))
     result_list.append(max(soup_result[5].tolist()))
     columns_list = ['min_temp', 'max_temp', 'min_temp_sense', 'max_temp_sense', 'pressure', 'min_humidity',
-                    'min_humidity', 'min_wind', 'max_wind', 'max_precipitation']
+                    'max_humidity', 'min_wind', 'max_wind', 'max_precipitation']
     result = dict(zip(columns_list, result_list))
     return result
 

@@ -17,7 +17,7 @@ async def set_notifications(message: types.Message):
     await message.answer(f"Currently you "
                          f"{'receive' if users[str(message.from_user.id)]['notification'] else 'dont receive'} "
                          f"notifications. "
-                         f"Do you want to change it?",
+                         f"Do you want to receive notifications?",
                          reply_markup=keyboard_client.notifications_keyboard)
 
 
