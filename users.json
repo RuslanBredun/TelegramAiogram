@@ -1,0 +1,18 @@
+{
+    "508750309": {
+        "city": "Киев",
+        "notification": true
+    },
+    "484014640": {
+        "city": "Киев",
+        "notification": true
+    },
+    "410193945": {
+        "city": "Днепр",
+        "notification": false
+    },
+    "874830971": {
+        "city": "Киев",
+        "notification": false
+    }
+}
