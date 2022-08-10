@@ -9,3 +9,4 @@ So, in this project was created Telegram Bot WeatherBot, that can next things:
 4. Try to guess the weather for 7 days
 
 Also you can set notifications and you will receiving wether predictions every day at the same time.
+I use JSON file like "data base", to store info about users.
