@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98085e64-c6e2-45c4-99c2-c0f8456eb6d5" name="Changes" comment="refactoring">
+    <list default="true" id="98085e64-c6e2-45c4-99c2-c0f8456eb6d5" name="Changes" comment="refactoring notifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notifications/notification_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/notification_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
     </list>
@@ -221,8 +220,26 @@
       <option name="project" value="LOCAL" />
       <updated>1660230144861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring notifications">
+      <created>1660232467663</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660232467663</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -240,6 +257,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Add normal messages" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="refactoring notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring notifications" />
   </component>
 </project>

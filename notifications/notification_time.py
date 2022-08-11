@@ -1,14 +1,15 @@
 import json
 from create_bot import bot
 
+from GismetToBot import get_now_weather
 import asyncio
 import aioschedule
-from GismetToBot import get_now_weather
 
 
 async def notification():
     with open('users.json', 'r', encoding="utf-8") as file:
         users = json.load(file)
+
     for user in users:
         if users[user]['notification']:
             weather_right_now = get_now_weather(users[user]['city'])
@@ -36,5 +37,5 @@ async def scheduler(time):
 
 async def on_startup(_):
     time = "10:00"
-    print(f"Time for notifications is {time}")
+    print(f"Time for notifications is {time} o'clock")
     asyncio.create_task(scheduler(time))
