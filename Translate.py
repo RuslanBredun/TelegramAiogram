@@ -18,3 +18,16 @@ weather_effect =   {'облачно с прояснениями': 'cloudy with c
                     'ясно': 'clear',
                     'град': 'hail'
                     }
+months = {'января': 'January',
+        'февраля': 'February',
+        'марта': 'March',
+        'апреля': 'April',
+        'мая': 'May',
+        'июня': 'June',
+        'июля': 'July',
+        'августа': 'August',
+        'сентября': 'September',
+        'октября': 'October',
+        'ноября': 'November',
+        'декабря': 'December'
+}

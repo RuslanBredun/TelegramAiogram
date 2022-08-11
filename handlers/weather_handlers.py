@@ -16,7 +16,7 @@ async def weather_now(message: types.Message):
     # TODO: create different messages that can be set in the settings
     await message.answer(f"🔸 Hello, {message.from_user.first_name}!\n"
                          f"🔸 The weather in {users[str(message.from_user.id)]['city']} at {weather_right_now['time']}\n"
-                         f"🔸 The temperature is now {weather_right_now['temp']} degrees, \n"
+                         f"🔸 The temperature is now {weather_right_now['temp']}, \n"
                          f"although it feels like {weather_right_now['temp_sens']}\n"
                          f"🔸 The pressure is {weather_right_now['pressure']} mm and \n"
                          f"humidity is approximately {weather_right_now['humidity']}%\n"
@@ -38,9 +38,9 @@ async def weather_today(message: types.Message):
     await message.answer(f"🔸 Hello, {message.from_user.first_name}!\n"
                          f"🔸 The weather in {users[str(message.from_user.id)]['city']} today:\n"
                          f"🔸 The temperature today will bo from {today_weather['min_temp']} to "
-                         f"{today_weather['max_temp']} degrees, "
+                         f"{today_weather['max_temp']}, "
                          f"although it feels like {today_weather['min_temp_sense']}-"
-                         f"{today_weather['max_temp_sense']} degrees"
+                         f"{today_weather['max_temp_sense']}"
                          f"🔸 The pressure is {today_weather['pressure']} mm and \n"
                          f"humidity is approximately {today_weather['min_humidity']} - "
                          f"{today_weather['max_humidity']}%\n"
@@ -62,7 +62,7 @@ async def weather_3days(message: types.Message):
     for day in days3_weather:
         await message.answer(f"{day['day']} \n"
                              f"🔸 The temperature will bo from {day['min_temp']} to "
-                             f"{day['max_temp']} degrees\n"
+                             f"{day['max_temp']}C\n"
                              f"🔸 {day['description']}")
 
 
@@ -79,7 +79,7 @@ async def weather_7days(message: types.Message):
     for day in days7_weather:
         await message.answer(f"{day['day']} \n"
                              f"🔸 The temperature will bo from {day['min_temp']} to "
-                             f"{day['max_temp']} degrees\n"
+                             f"{day['max_temp']}\n"
                              f"🔸 {day['description']}")
 
 
