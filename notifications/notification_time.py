@@ -12,6 +12,7 @@ async def notification():
     for user in users:
         if users[user]['notification']:
             weather_right_now = get_now_weather(users[user]['city'])
+
             message = (f"🔸 Hello\n"
                        f"🔸 The weather in {users[user]['city']} at {weather_right_now['time']}\n"
                        f"🔸 The temperature is now {weather_right_now['temp']} degrees, "
@@ -26,12 +27,14 @@ async def notification():
             await bot.send_message(chat_id=user, text=message)
 
 
-async def scheduler():
-    aioschedule.every().day.at("14:05").do(notification)
+async def scheduler(time):
+    aioschedule.every().day.at(time).do(notification)
     while True:
         await aioschedule.run_pending()
         await asyncio.sleep(0.1)
 
 
 async def on_startup(_):
-    asyncio.create_task(scheduler())
+    time = "10:00"
+    print(f"Time for notifications is {time}")
+    asyncio.create_task(scheduler(time))

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98085e64-c6e2-45c4-99c2-c0f8456eb6d5" name="Changes" comment="Add normal messages">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Translate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/weather_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/weather_handlers.py" afterDir="false" />
+    <list default="true" id="98085e64-c6e2-45c4-99c2-c0f8456eb6d5" name="Changes" comment="refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/notification_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/notification_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,6 +93,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="API_TOKEN" value="5434636423:AAFM-c6HOVJTflUw1Wgi4vSYOymYp1HrTMc" />
+        <env name="API" value="5229380254:AAGR74qGs1UY8hzZwnML7BJU8EfiFpydYjg" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -156,6 +157,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="API" value="5229380254:AAGR74qGs1UY8hzZwnML7BJU8EfiFpydYjg" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -181,8 +183,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.shedule" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.shedule" />
         <item itemvalue="Python.scrapping" />
         <item itemvalue="Python.AdsToGS.ver.1.1" />
         <item itemvalue="Python.AdsToGS_ver1" />
@@ -212,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660151042209</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactoring">
+      <created>1660230144861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660230144861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +239,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Add normal messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add normal messages" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>
