@@ -1,0 +1,6 @@
+numpy
+aiogram
+aioschedule
+fake_useragent
+BeautifulSoup4
+requests

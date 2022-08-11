@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import datetime
 from fake_useragent import UserAgent
 import numpy as np
+from Translate import weekdays
+from Translate import weather_effect
 
 
 def get_html_code(city='киев'):
@@ -45,10 +47,14 @@ def get_week_info(city='киев'):
     soup_result = np.column_stack((soup_result, img_list))
     result = []
     for row in soup_result:
-        result.append({'day': row[0] + ' - ' + row[1] + ' ' + row[2],
+        eng_effect = []
+        for effect in row[7].split(', '):
+            eng_effect.append(weather_effect[effect.lower()])
+        eng_effect[0] = eng_effect[0].capitalize()
+        result.append({'day': weekdays[row[0]]+ ' - ' + row[1] + ' ' + row[2],
                        'min_temp': row[4],
                        'max_temp': row[6],
-                       'description': row[7]})
+                       'description':  ', '.join(eng_effect)})
     return result
 
 
@@ -104,5 +110,5 @@ def get_7d_weather(city='киев'):
     return get_week_info(city=city)[:7]
 
 
-if __name__ == "__name__":
-    get_week_info()
+if __name__ == "__main__":
+    print('Done')
