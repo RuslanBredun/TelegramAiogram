@@ -5,6 +5,7 @@ from fake_useragent import UserAgent
 import numpy as np
 from Translate import weekdays
 from Translate import weather_effect
+from  Translate import months
 
 
 def get_html_code(city='киев'):
@@ -51,7 +52,7 @@ def get_week_info(city='киев'):
         for effect in row[7].split(', '):
             eng_effect.append(weather_effect[effect.lower()])
         eng_effect[0] = eng_effect[0].capitalize()
-        result.append({'day': weekdays[row[0]]+' - '+row[1]+' '+row[2],
+        result.append({'day': weekdays[row[0]]+' - '+row[1]+' '+months[row[2]],
                        'min_temp': row[4],
                        'max_temp': row[6],
                        'description': ', '.join(eng_effect)})
