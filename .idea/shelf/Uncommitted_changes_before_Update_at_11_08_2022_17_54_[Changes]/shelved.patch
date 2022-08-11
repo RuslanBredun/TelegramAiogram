@@ -1,0 +1,77 @@
+Index: Translate.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>weekdays = {'Понедельник': 'Monday',\r\n            'Вторник': 'Tuesday',\r\n            'Среда': 'Wednesday',\r\n            'Четверг': 'Thursday',\r\n            'Пятница': 'Friday',\r\n            'Суббота': 'Saturday',\r\n            'Воскресенье': 'Sunday',\r\n            }\r\nweather_effect =   {'облачно с прояснениями': 'cloudy with clearings',\r\n                    'сильный дождь': 'heavy rain',\r\n                    'переменная облачность': 'partly cloudy',\r\n                    'дождь': 'rain',\r\n                    'возможны грозы': 'thunderstorms possible',\r\n                    'мелкий дождь': 'light rain',\r\n                    'небольшая облачность': 'partly cloudy',\r\n                    'сплошная облачность': 'overcast',\r\n                    'грозы': 'thunderstorms',\r\n                    'ясно': 'clear',\r\n                    'град': 'hail'\r\n                    }
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Translate.py b/Translate.py
+--- a/Translate.py	(revision e244d37b48426bbdd7c4e33e771a802123562a50)
++++ b/Translate.py	(date 1660217376265)
+@@ -6,15 +6,16 @@
+             'Суббота': 'Saturday',
+             'Воскресенье': 'Sunday',
+             }
+-weather_effect =   {'облачно с прояснениями': 'cloudy with clearings',
+-                    'сильный дождь': 'heavy rain',
+-                    'переменная облачность': 'partly cloudy',
+-                    'дождь': 'rain',
+-                    'возможны грозы': 'thunderstorms possible',
+-                    'мелкий дождь': 'light rain',
+-                    'небольшая облачность': 'partly cloudy',
+-                    'сплошная облачность': 'overcast',
+-                    'грозы': 'thunderstorms',
+-                    'ясно': 'clear',
+-                    'град': 'hail'
+-                    }
+\ No newline at end of file
++
++weather_effect = {'облачно с прояснениями': 'cloudy with clearings',
++                  'сильный дождь': 'heavy rain',
++                  'переменная облачность': 'partly cloudy',
++                  'дождь': 'rain',
++                  'возможны грозы': 'thunderstorms possible',
++                  'мелкий дождь': 'light rain',
++                  'небольшая облачность': 'partly cloudy',
++                  'сплошная облачность': 'overcast',
++                  'грозы': 'thunderstorms',
++                  'ясно': 'clear',
++                  'град': 'hail'
++                  }
+\ No newline at end of file
+Index: users.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n    \"508750309\": {\r\n        \"city\": \"марокко\",\r\n        \"notification\": false\r\n    },\r\n    \"484014640\": {\r\n        \"city\": \"Киев\",\r\n        \"notification\": true\r\n    },\r\n    \"410193945\": {\r\n        \"city\": \"Днепр\",\r\n        \"notification\": false\r\n    },\r\n    \"874830971\": {\r\n        \"city\": \"Киев\",\r\n        \"notification\": false\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/users.json b/users.json
+--- a/users.json	(revision e244d37b48426bbdd7c4e33e771a802123562a50)
++++ b/users.json	(date 1660217376434)
+@@ -1,7 +1,7 @@
+ {
+     "508750309": {
+         "city": "марокко",
+-        "notification": false
++        "notification": true
+     },
+     "484014640": {
+         "city": "Киев",
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10 (TelegramAiogram) (2)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision e244d37b48426bbdd7c4e33e771a802123562a50)
++++ b/.idea/misc.xml	(date 1660217408592)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (TelegramAiogram) (2)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (TelegramAiogram)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
