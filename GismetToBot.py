@@ -56,6 +56,7 @@ def get_week_info(city='киев'):
                        'min_temp': row[4],
                        'max_temp': row[6],
                        'description': ', '.join(eng_effect)})
+        print("BLABLABLA")
     return result
 
 
