@@ -1,15 +1,15 @@
 {
     "508750309": {
-        "city": "марокко",
-        "notification": false
+        "city": "Днепр",
+        "notification": true
     },
     "484014640": {
         "city": "Киев",
         "notification": true
     },
     "410193945": {
-        "city": "Днепр",
-        "notification": false
+        "city": "Харьков",
+        "notification": true
     },
     "874830971": {
         "city": "Киев",

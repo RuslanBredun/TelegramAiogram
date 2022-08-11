@@ -61,7 +61,7 @@ async def weather_3days(message: types.Message):
     # TODO: create different messages that can be set in the settings
     for day in days3_weather:
         await message.answer(f"{day['day']} \n"
-                             f"🔸 The temperature will bo from {day['min_temp']} to "
+                             f"🔸 The temperature will be from {day['min_temp']} to "
                              f"{day['max_temp']}C\n"
                              f"🔸 {day['description']}")
 
@@ -78,7 +78,7 @@ async def weather_7days(message: types.Message):
     # TODO: create different messages that can be set in the settings
     for day in days7_weather:
         await message.answer(f"{day['day']} \n"
-                             f"🔸 The temperature will bo from {day['min_temp']} to "
+                             f"🔸 The temperature will be from {day['min_temp']} to "
                              f"{day['max_temp']}\n"
                              f"🔸 {day['description']}")
 
