@@ -14,4 +14,7 @@ weather_effect =   {'облачно с прояснениями': 'cloudy with c
                     'мелкий дождь': 'light rain',
                     'небольшая облачность': 'partly cloudy',
                     'сплошная облачность': 'overcast',
+                    'грозы': 'thunderstorms',
+                    'ясно': 'clear',
+                    'град': 'hail'
                     }

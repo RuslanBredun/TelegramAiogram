@@ -51,10 +51,10 @@ def get_week_info(city='киев'):
         for effect in row[7].split(', '):
             eng_effect.append(weather_effect[effect.lower()])
         eng_effect[0] = eng_effect[0].capitalize()
-        result.append({'day': weekdays[row[0]]+ ' - ' + row[1] + ' ' + row[2],
+        result.append({'day': weekdays[row[0]]+' - '+row[1]+' '+row[2],
                        'min_temp': row[4],
                        'max_temp': row[6],
-                       'description':  ', '.join(eng_effect)})
+                       'description': ', '.join(eng_effect)})
     return result
 
 
@@ -111,4 +111,4 @@ def get_7d_weather(city='киев'):
 
 
 if __name__ == "__main__":
-    print('Done')
+    print(get_week_info())
